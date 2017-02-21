@@ -1,3 +1,4 @@
+<?php
 try
 {
 	$req_insert = 'INSERT INTO nomdematable 
@@ -9,3 +10,4 @@ catch(PDOException $ex)
 {
 	die("Erreur " . $ex->getMessage());
 }
+?>
