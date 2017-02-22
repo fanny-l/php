@@ -1,4 +1,6 @@
 <?php
+include('connexion.php');
+
 // Si le champ ayant pour name "envoi" a été posté
 if (isset($_POST['envoi'])) {
   // On met les données postées dans des variables
