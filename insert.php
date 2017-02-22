@@ -1,4 +1,6 @@
 <?php
+include(connexion.php);
+
 try
 {
 	$req_insert = 'INSERT INTO nomdematable 
