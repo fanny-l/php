@@ -2,11 +2,11 @@
   // Sélection des données
   try
   {
-    $req_utilisateurs = "SELECT colonne1, colonne2 
+    $req_films = "SELECT colonne1, colonne2 
      FROM nomdematable";
-    $sql_utilisateurs = $db->prepare($req_utilisateurs);
-    $sql_utilisateurs->execute();
-    $list_utilisateurs = $sql_utilisateurs->fetchAll();
+    $sql_films = $db->prepare($req_films);
+    $sql_films->execute();
+    $list_films = $sql_films->fetchAll();
   }
   catch(PDOException $ex)
   {
@@ -14,7 +14,7 @@
   }
 
   // Affichage des données
-  foreach ($list_utilisateurs as $ligne_utilisateurs) {
-  echo $ligne_utilisateurs['nom'].' '.$ligne_utilisateurs['prenom'].'<br>';
+  foreach ($list_films as $ligne_films) {
+  echo $ligne_films['nom'].' '.$ligne_films['prenom'].'<br>';
   }
 ?>
