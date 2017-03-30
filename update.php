@@ -1,4 +1,5 @@
 <?php
+if (isset($_POST['envoi'])) {
      try
      {
 	$req_update = "UPDATE nomdematable 
@@ -11,4 +12,5 @@
      {
 	die("Erreur " . $ex->getMessage());
      }
+}
 ?>
