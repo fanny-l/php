@@ -1,8 +1,8 @@
 <?php
 $host 		= "localhost";
+$dbname 	= "yourdatabase";
 $username 	= "root";
 $password 	= "root";
-$dbname 	= "yourdatabase";
 
 try
 {
@@ -12,7 +12,6 @@ try
 }
 catch(Exception $e)
 {
-	echo 'Une erreur est survenue !';
-	die();
+	die('Erreur : ' . $e->getMessage());
 }
 ?>
