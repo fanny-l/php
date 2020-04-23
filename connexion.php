@@ -10,8 +10,9 @@ try
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	echo "Connexion réussie !"; 
 }
-catch(Exception $e)
+catch(PDOException $ex)
 {
 	die('Erreur : ' . $e->getMessage());
 }
+
 ?>
