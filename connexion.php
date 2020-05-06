@@ -12,7 +12,7 @@ try
 }
 catch(PDOException $ex)
 {
-	die('Erreur : ' . $e->getMessage());
+	die('Erreur : ' . $ex->getMessage());
 }
 
 ?>
