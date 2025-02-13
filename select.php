@@ -4,7 +4,7 @@
   {
     $req_select = "SELECT colonne1, colonne2 FROM nomdematable";
     $sql_select = $db->prepare($req_select);
-    $sql_films->execute();
+    $sql_select->execute();
     $list_select = $sql_select->fetchAll();
   }
   catch(PDOException $ex)
